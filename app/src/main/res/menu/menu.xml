@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/favorite"
+        android:icon="@mipmap/raw_1499933216"
+        android:title="我的关注"
+
+        />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@mipmap/raw_1499947358"
+        android:title="我的收藏"/>
+    <item
+        android:id="@+id/photo"
+        android:icon="@mipmap/raw_1499946865"
+        android:title="搜索好友"/>
+    <item
+        android:id="@+id/file"
+        android:icon="@mipmap/raw_1499947389"
+        android:title="消息通知"/>
+</menu>

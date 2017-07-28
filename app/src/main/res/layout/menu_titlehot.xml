@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/skyblue"
+              android:fitsSystemWindows="true"
+              android:clipToPadding="true"
+              android:layout_height="70dp">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        >
+        <RelativeLayout
+            android:background="@color/skyblue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/menuone_text_return"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="取消"/>
+            <TextView
+                android:layout_marginLeft="150dp"
+                android:id="@+id/menuone_title_center"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="热门关注"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_toRightOf="@+id/menuone_title_center"
+                android:id="@+id/menuone_title_right"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:background="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:hint="输入关键字"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+</LinearLayout>

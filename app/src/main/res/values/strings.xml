@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Framework</string>
+    <string name="prompt_account">账户</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_head">head</string>
+    <string name="prompt_phone">手机号码</string>
+    <string name="prompt_sex">性别</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_regist">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_account">无效手机号</string>
+    <string name="error_invalid_password">密码不少于6位</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing account
+        completions."
+    </string>
+    <string name="pref_snooze_duration_key">KEY_SNOOZE_DURATION</string>
+</resources>

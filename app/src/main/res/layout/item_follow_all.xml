@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <test.liugang.com.myframework.view.autoview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/raw_1500033586"
+            android:id="@+id/img_follow_all"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/img_follow_all"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿斯顿马丁"
+                    android:id="@+id/tv_follow_title"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃货们快戳我"
+                android:textSize="10sp"
+                android:id="@+id/tv_follow_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+      <TextView
+          android:id="@+id/tv_follow_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2017-07-05 11:52"
+          android:layout_toRightOf="@+id/lin"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="50dp"
+          />
+        <ImageView
+            android:id="@+id/img_arrow_rigth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_small"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

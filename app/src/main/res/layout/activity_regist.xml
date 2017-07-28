@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/head_title"
+             android:id="@+id/title"
+        ></include>
+    <LinearLayout
+        android:id="@+id/account_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/accountinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_account"
+            app:counterEnabled="true"
+            app:counterMaxLength="11"
+            app:hintAnimationEnabled="true"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            android:theme="@style/customLineColor"
+            >
+
+            <EditText
+                android:id="@+id/regist_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeActionId="@+id/regist_password"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            app:passwordToggleEnabled="true"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            android:theme="@style/customLineColor"
+            >
+
+            <EditText
+                android:id="@+id/regist_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="12345678"
+                android:inputType="textPassword"
+                android:imeActionId="@+id/regist_phone"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/accountphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_phone"
+            app:counterEnabled="true"
+            app:counterMaxLength="11"
+            app:hintAnimationEnabled="true"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            android:theme="@style/customLineColor"
+            >
+
+            <EditText
+                android:id="@+id/regist_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15678909876"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:imeActionId="@+id/regist_sex"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/accountsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_sex"
+            app:counterEnabled="true"
+            app:counterMaxLength="11"
+            app:hintAnimationEnabled="true"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            android:theme="@style/customLineColor"
+            >
+
+            <EditText
+                android:id="@+id/regist_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeActionId="@+id/account_sign_in_button"
+                android:imeOptions="actionDone"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/account_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_btn"
+            android:textColor="@color/whitesmoke"
+            android:text="@string/action_regist"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

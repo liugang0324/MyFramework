@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+           >
+<include layout="@layout/head_title"
+
+    ></include>
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/account_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--            app:counterEnabled="true"计数
+                        app:counterMaxLength="11"允许输入的最大长度
+                        app:errorTextAppearance=""  设置错误提示字体样式
+                        app:errorEnabled="false"  设置错误提示
+                        app:counterOverflowTextAppearance=""字体超出计数时样式
+                        app:hintEnabled="false" 将不显示浮动标签，默认true
+                        -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/accountinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                android:hint="@string/prompt_phone"
+                app:counterMaxLength="11"
+                app:hintAnimationEnabled="true"
+                app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintTextAppearance="@style/hintAppearance"
+                android:theme="@style/customLineColor"
+                >
+
+                <EditText
+                    android:id="@+id/login_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15035664234"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <!--app:passwordToggleDrawable="@drawable/common_full_open_on_phone"  设置右侧密码展开显示图标
+                app:passwordToggleEnabled="false"  设置是否显示右侧密码开关图标 默认true
+            -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintTextAppearance="@style/hintAppearance"
+                android:hint="@string/prompt_password"
+                android:theme="@style/customLineColor"
+                app:passwordToggleEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12345678"
+                    android:imeActionId="@+id/account_sign_in_button"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/account_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_btn"
+                android:textColor="@color/whitesmoke"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold"/>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="注册"
+                   android:id="@+id/regist"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="找回密码"
+                   android:id="@+id/find_pwd"
+                   android:layout_alignParentRight="true"
+                   />
+           </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
